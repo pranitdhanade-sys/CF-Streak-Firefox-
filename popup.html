@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeforces Streak</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>🔥 Codeforces Streak</h1>
+
+      <div id="no-user" class="state hidden">
+        <p>Add your Codeforces username to begin tracking.</p>
+        <button id="open-options" type="button">Set Username</button>
+      </div>
+
+      <div id="error-state" class="state hidden">
+        <p id="error-message"></p>
+        <button id="retry" type="button">Retry</button>
+      </div>
+
+      <div id="stats-state" class="hidden">
+        <p class="user">Handle: <strong id="username"></strong></p>
+        <p id="status-label" class="status"></p>
+        <div class="grid">
+          <section>
+            <h2>Current</h2>
+            <p id="current-streak" class="num">0</p>
+          </section>
+          <section>
+            <h2>Longest</h2>
+            <p id="longest-streak" class="num">0</p>
+          </section>
+          <section>
+            <h2>Solved Days</h2>
+            <p id="total-days" class="num">0</p>
+          </section>
+          <section>
+            <h2>Last Solve</h2>
+            <p id="last-solved" class="num small">—</p>
+          </section>
+        </div>
+        <div class="actions">
+          <button id="refresh" type="button">Refresh</button>
+          <button id="settings" type="button">Settings</button>
+        </div>
+        <p id="updated-at" class="timestamp"></p>
+      </div>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
