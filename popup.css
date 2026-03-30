@@ -1,0 +1,95 @@
+:root {
+  color-scheme: light dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 340px;
+  min-height: 320px;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.card {
+  padding: 16px;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.user {
+  margin: 8px 0;
+}
+
+.status {
+  font-weight: 700;
+  margin: 8px 0 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+section {
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 10px;
+  background: #111827;
+}
+
+.num {
+  margin: 6px 0 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.small {
+  font-size: 0.95rem;
+}
+
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #1d4ed8;
+  color: #eff6ff;
+  padding: 8px;
+  font-weight: 600;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.timestamp {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.hidden {
+  display: none;
+}
+
+.state {
+  margin-top: 20px;
+}
